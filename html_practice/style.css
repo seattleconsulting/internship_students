@@ -1,0 +1,54 @@
+body {
+}
+
+#wrapper {
+  height: auto;
+  width: 800px;
+}
+
+/*ヘッダーの色→#09141d;*/
+#header {
+}
+
+.title {
+  margin-top: 15px;
+}
+
+.logo {
+  float: left;
+}
+
+#content {
+  height: auto;
+  width: 800px;
+  margin-bottom: 10px
+}
+
+.box-area {
+}
+.content-img {
+}
+
+
+.text-box {
+}
+
+
+/* font-family: "ＭＳ ゴシック", "MS Gothic", "Osaka－等幅", Osaka-mono, monospace; */
+.text {
+}
+
+.copy {
+  border-top-width: 1px;
+  border-top-style: dashed;
+  border-top-color: #333;
+  text-align: center;
+  font-size: 9px;
+  font-family: Verdana, Geneva, sans-serif;
+  padding-top: 5px;
+}
+.border {
+  border-top-width: 1px;
+  border-top-style: dashed;
+  margin: 10px 0px;
+}
