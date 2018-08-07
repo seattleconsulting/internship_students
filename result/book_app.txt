@@ -1,0 +1,59 @@
+2日目
+rails new book_app
+
+cd internship_students/book_app
+
+bundle update
+
+rails generate scaffold books title:string price:integer published:date
+
+rake db:migrate
+
+サーバの起動方法
+new terminalで新しいターミナルを作成後、
+cd internship_students/book_app
+rails server
+
+new terminalで新しいターミナルを作成後、
+cd internship_students/book_app
+
+rails c
+
+@book = Book.all
+
+first = @book.first
+
+book = Book.find(1)
+
+book.title
+book.price
+book.published
+
+newbook = Book.new(title:"初めてのプログラミング", price:3000, published:"2018-01-16")
+
+newbook.save
+
+Book.all
+
+Book.create(title:"ワクワクプログラミング", price:3500, published:"2018-03-1")
+
+Book.all
+
+Book.find(7)
+
+book.destroy
+
+book.save
+
+Book.all
+
+book = Book.find(6)
+
+book.price
+
+book.price = 2700
+
+book.save
+
+book
+
