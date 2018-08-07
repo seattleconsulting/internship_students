@@ -1,17 +1,17 @@
 2日目
 サーバの起動方法
-cd book_app
-rails server –b 0.0.0.0 -p 8080
+cd internship_students/book_app
+rails server
 
 new terminalで新しいターミナルを作成後、
-cd book_app
+cd internship_students/book_app
 
 rails generate scaffold books title:string price:integer published:date
 
 rake db:migrate
 
 new terminalで新しいターミナルを作成後、
-cd book_app
+cd internship_students/book_app
 
 rails c
 
@@ -19,23 +19,23 @@ rails c
 
 first = @book.first
 
-book = book.find(1)
+book = Book.find(1)
 
 book.title
 book.price
 book.published
 
-newbook = Book.new(title:初めてのプログラミング, prie:3000, published:"2018-01-16")
+newbook = Book.new(title:"初めてのプログラミング", price:3000, published:"2018-01-16")
 
 newbook.save
 
 Book.all
 
-Book.create(title:"ワクワクプログラミング", price:3500, published)
+Book.create(title:"ワクワクプログラミング", price:3500, published:"2018-03-1")
 
 Book.all
 
-book.find(7)
+Book.find(7)
 
 book.destroy
 
