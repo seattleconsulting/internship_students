@@ -1,0 +1,55 @@
+2日目
+サーバの起動方法
+cd book_app
+rails server –b 0.0.0.0 -p 8080
+
+new terminalで新しいターミナルを作成後、
+cd book_app
+
+rails generate scaffold books title:string price:integer published:date
+
+rake db:migrate
+
+new terminalで新しいターミナルを作成後、
+cd book_app
+
+rails c
+
+@book = Book.all
+
+first = @book.first
+
+book = book.find(1)
+
+book.title
+book.price
+book.published
+
+newbook = Book.new(title:初めてのプログラミング, prie:3000, published:"2018-01-16")
+
+newbook.save
+
+Book.all
+
+Book.create(title:"ワクワクプログラミング", price:3500, published)
+
+Book.all
+
+book.find(7)
+
+book.destroy
+
+book.save
+
+Book.all
+
+book = Book.find(6)
+
+book.price
+
+book.price = 2700
+
+book.save
+
+book
+
